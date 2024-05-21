@@ -1,0 +1,15 @@
+:root {
+  --el-color-primary: var(--vp-c-brand) !important;
+  --el-color-primary-light-3: var(--vp-c-brand-2) !important;
+  --el-color-primary-light-5: var(--vp-c-brand-3) !important;
+  --el-font-family: var(--vp-font-family-base) !important;
+
+  --vp-z-index-footer: 0;
+  --vp-layout-max-width: 1640px;
+
+  --page-pv-height: 32px;
+
+  --min-h100: calc(
+    var(--vh) - var(--vp-nav-height) - var(--page-pv-height) - 32px - 7rem
+  );
+}
