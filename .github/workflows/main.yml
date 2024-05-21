@@ -45,10 +45,8 @@ jobs:
           # 端口，一般是 22
           port: ${{ secrets.SERVER_PORT }}
           # 编译出来的文件夹名称，默认是 dist 文件
-          source: "./dist/*"
+          source: "dist/*"
           # 需要拷贝到服务器的哪个路径下
           target: ${{ secrets.SERVER_TARGET }}
-          # 解压时覆盖现有文件
-          overwrite: true
-          # 删除指定数量的前导路径元素
-          strip_components: 1
+          # 服务器的 ssh
+          key: ${{ secrets.SERVER_PRIVATE_KEY }}
