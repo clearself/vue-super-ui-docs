@@ -22,9 +22,9 @@ jobs:
       # 安装 nodejs
       - name: 安装 nodejs
         # 指定 node 版本
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2.5.1
         with:
-          node-version: "20.8.0"
+          node-version: "19.x"
       # 安装 npm 依赖包
       - name: install deps
         run: pnpm install
