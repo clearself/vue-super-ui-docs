@@ -22,9 +22,9 @@ jobs:
       # 安装 nodejs
       - name: 安装 nodejs
         # 指定 node 版本
-        uses: actions/setup-node@v2.5.1
+        uses: actions/setup-node@v3
         with:
-          node-version: "19.x"
+          node-version: "20.8.0"
       # 安装 npm 依赖包
       - name: install deps
         run: pnpm install
@@ -45,8 +45,10 @@ jobs:
           # 端口，一般是 22
           port: ${{ secrets.SERVER_PORT }}
           # 编译出来的文件夹名称，默认是 dist 文件
-          source: "dist/"
+          source: "./dist/*"
           # 需要拷贝到服务器的哪个路径下
           target: ${{ secrets.SERVER_TARGET }}
-          # 服务器的 ssh
-          key: ${{ secrets.SERVER_PRIVATE_KEY }}
+          # 解压时覆盖现有文件
+          overwrite: true
+          # 删除指定数量的前导路径元素
+          strip_components: 1
