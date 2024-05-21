@@ -4,7 +4,7 @@
 
 将`main.yml`文件内容修改如下：
 
-<<< @/../.github/workflows/main.yml
+<!-- <<< @/../.github/workflows/main.yml -->
 
 ## github 变量
 

@@ -81,10 +81,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomiaa12/kyx.git"
+    "url": "git+https://github.com/clearself/vue-super-ui-docs.git"
   },
   "bugs": {
-    "url": "https://github.com/tomiaa12/kyx/issues"
+    "url": "https://github.com/clearself/vue-super-ui-docs/issues"
   },
-  "homepage": "https://kuangyx.cn"
+  "homepage": "https://www.flypa.cn/vue-super-ui"
 }
