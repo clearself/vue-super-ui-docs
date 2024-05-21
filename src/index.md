@@ -58,5 +58,5 @@ import SitePv from './components/SitePv.vue'
 
 <!-- <GithubChart /> -->
 
-<SitePv />
+<!-- <SitePv /> -->
 

@@ -45,7 +45,7 @@ jobs:
           # 端口，一般是 22
           port: ${{ secrets.SERVER_PORT }}
           # 编译出来的文件夹名称，默认是 dist 文件
-          source: "kuangyx/"
+          source: "dist/"
           # 需要拷贝到服务器的哪个路径下
           target: ${{ secrets.SERVER_TARGET }}
           # 服务器的 ssh
