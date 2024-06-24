@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "deploy": "scp -r dist/* root@101.43.221.193:/www/wwwroot/fly/vue-super-ui",
+    "dep": "scp -r dist/* root@101.43.221.193:/www/wwwroot/fly/vue-super-ui",
     "serve": "vitepress serve src",
     "preview": "vitepress preview src --port 8080",
     "log": "conventional-changelog -p angular -i ./src/docs/关于/更新日志.md -s -r 0 -n ./changelog.ts"

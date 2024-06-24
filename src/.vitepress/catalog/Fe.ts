@@ -39,7 +39,8 @@ export const Fe = [
       { text: 'Vue2和Vue3的区别', link: '/docs/fe/vue/vue2-vue3' },
       { text: 'Vue3组合API', link: '/docs/fe/vue/vue3-api' },
       { text: 'useTable hooks封装', link: '/docs/fe/vue/useTable' },
-      { text: 'table表头自定义组件封装', link: '/docs/fe/vue/fields-setting' }
+      { text: 'table表头自定义组件封装', link: '/docs/fe/vue/fields-setting' },
+      { text: '远程模糊搜索下拉分页组件', link: '/docs/fe/vue/page-select' }
     ]
   },
   
