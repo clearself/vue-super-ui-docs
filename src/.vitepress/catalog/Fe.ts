@@ -29,7 +29,12 @@ export const Fe = [
       { text: '前端实用方法', link: '/docs/fe/js/fe-function' },
       { text: 'es6新增语法', link: '/docs/fe/js/es6' },
       { text: '大数字加减乘除运算问题', link: '/docs/fe/js/big-num' },
-      { text: '接口数据的大数字问题', link: '/docs/fe/js/big-data' }
+      { text: '接口数据的大数字问题', link: '/docs/fe/js/big-data' },
+      { text: '实时获取父元素的可视区的内子元素', link: '/docs/fe/js/observe-el' },
+      { text: '根据markdown生成的html字符串获取h1-6标题 组合成treeData', link: '/docs/fe/js/get-md-title' },
+
+      
+      
     ]
   },
   {
