@@ -242,6 +242,7 @@ export default defineConfig({
           { text: '前端技术栈', link: '/docs/fe/html/standard' }
         ]
       },
+      { text: 'BPMN工作流', link: 'https://rich.flypa.cn/bpmn' },
       { text: '微前端', link: 'https://clearself.github.io/' },
       { text: '易收藏', link: 'https://ysc.dnscn.site/#/login' },
       { 

@@ -41,11 +41,11 @@ features:
     title: React 构建用户界面的首选
     details: 是由Facebook开发的开源JavaScript库，用于构建用户界面。它以组件化的思想为基础，将用户界面划分为多个可重用的组件。这使得开发者可以将复杂的UI拆分为简单的部分，便于开发和维护。
   - icon: 🛠️
-    title: 开发依赖
-    details: 采用 Vue@3.3.4 + TypeScript@5.2.2 + Vite@4.4.11 + Less@4.2.0 实现
+    title: 易收藏
+    details: 好用的网址收藏工具，文本记录，密码记录等等，可以参与话讨论，发起有趣的话题供大家讨论，也可以对别人的话题进行点赞、评论、发送表情等。
   - icon: ⚡️
-    title: border-box
-    details: '所有组件 CSS 样式均使用 box-sizing: border-box; 模式'
+    title: BPMN工作流
+    details: '基于BPMN2.0 + Vue3 + Ant Design Vue + TypeScript，同时支持 camunda、flowable、activitiy可自定义设置，完善度高。'
   - icon: 🚀
     title: 开箱即用
     details: 目前共有 52 个常用基础 UI 组件，以及 11 个常用工具函数
