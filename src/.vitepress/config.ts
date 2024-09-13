@@ -243,18 +243,26 @@ export default defineConfig({
           { text: '微前端', link: 'https://clearself.github.io/' },
         ]
       },
-      { text: 'BPMN工作流', link: 'https://rich.flypa.cn/bpmn' },
+      { text: 'BPMN工作流', link: 'https://nest.flypa.cn/bpmn' },
       
       { text: 'NestJs项目', link: 'https://nest.flypa.cn/' },
       { text: '易收藏', link: 'https://ysc.dnscn.site/#/login' },
       { 
-        text: '工程模版',
+        text: '在线工具',
         items: [
-          { text: 'Vue2+Webpack PC', link: 'https://github.com/clearself/webpack-pc-vue2-template' },
-          { text: 'Vue2+Vite4 PC', link: 'https://github.com/clearself/vite4.x-vue2-template' },
-          { text: 'Vue2+Webpack Moble', link: 'https://github.com/clearself/moble-vue-template' },
-          { text: '微前端 qiankun', link: 'https://github.com/clearself/qiankun' },
-          { text: 'Vue3+Vite+TS', link: 'https://github.com/clearself/v3-admin-vite' }
+          { text: 'AI生成证件照', link: 'https://photo.flypa.cn/' },
+          { text: '图片压缩', link: 'https://txx.cssrefs.com/' },
+          { text: '白板绘图开源工具', link: 'https://excalidraw.com/' },
+          { text: '毛泽东选集', link: 'https://weiyinfu.cn/MyStatic/MaoZeDongAnthology/' },
+          { text: '朋友圈转发截图生成工具', link: 'https://chencoding.top:8084/' },
+          { text: '在线思维导图', link: 'https://chencoding.top:8082/#/' },
+          
+          
+          // { text: 'Vue2+Webpack PC', link: 'https://github.com/clearself/webpack-pc-vue2-template' },
+          // { text: 'Vue2+Vite4 PC', link: 'https://github.com/clearself/vite4.x-vue2-template' },
+          // { text: 'Vue2+Webpack Moble', link: 'https://github.com/clearself/moble-vue-template' },
+          // { text: '微前端 qiankun', link: 'https://github.com/clearself/qiankun' },
+          // { text: 'Vue3+Vite+TS', link: 'https://github.com/clearself/v3-admin-vite' }
         ]
       },
     ],
