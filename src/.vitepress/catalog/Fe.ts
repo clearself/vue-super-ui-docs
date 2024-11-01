@@ -38,14 +38,15 @@ export const Fe = [
     ]
   },
   {
-    text: 'Vue',
+    text: 'Vue3',
     collapsed: false,
     items: [
       { text: 'Vue2和Vue3的区别', link: '/docs/fe/vue/vue2-vue3' },
-      { text: 'Vue3组合API', link: '/docs/fe/vue/vue3-api' },
       { text: 'useTable hooks封装', link: '/docs/fe/vue/useTable' },
       { text: 'table表头自定义组件封装', link: '/docs/fe/vue/fields-setting' },
-      { text: '远程模糊搜索下拉分页组件', link: '/docs/fe/vue/page-select' }
+      { text: '远程模糊搜索下拉分页组件', link: '/docs/fe/vue/page-select' },
+      { text: 'Vue3.4新特性', link: '/docs/fe/vue/vue3-api4' },
+      { text: 'Vue3.5新特性', link: '/docs/fe/vue/vue3-api5' },
     ]
   },
   
