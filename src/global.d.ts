@@ -11,7 +11,7 @@ declare global {
     LIVE2DCUBISMPIXI: any
   }
 }
-
+declare module 'busuanzi.pure.js'
 declare module "axios" {
   export interface AxiosRequestConfig {
     callbackParamName?: string

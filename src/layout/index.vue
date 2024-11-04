@@ -37,15 +37,9 @@
     </template>
     <template #doc-after>
       <div id="gitalk-container"></div>
-      <!-- <Comment v-if="!showGlobalComment" /> -->
     </template>
   </defaultLayout>
-  <!-- <ClientOnly> <SideTool /> </ClientOnly> -->
-  <div v-if="showGlobalComment" id="gitalk-container"></div>
-  <!-- <Comment
-    v-if="showGlobalComment"
-    class="home-comment"
-  /> -->
+  <div style="width:50%;margin:0 auto;" v-if="showGlobalComment" id="gitalk-container"></div>
   <Live2D v-if="!isMobile" />
 
   <el-backtop
@@ -60,14 +54,13 @@ import { useRoute, useRouter, useData, inBrowser } from "vitepress"
 import { computed, onMounted, watch, nextTick } from "vue"
 import "gitalk/dist/gitalk.css";
 import createGitalk from "./gitalk";
-// import Comment from "./Comment.vue"
 import Live2D from "./Live2d.vue"
 import SideTool from "./SideTool.vue"
 import { isMobile } from "@/utils"
 import FirstLoading from "./FirstLoading.vue"
 
 const route = useRoute()
-const router = useRouter()
+// const router = useRouter()
 
 const data = useData()
 
@@ -101,17 +94,9 @@ onMounted(async () => {
 
 
   // 初次加载时初始化 Gitalk
-  initGitalk();
-
-// 监听路由变化
-watch(
-    () => route.path,
-    (newPath) => {
-    nextTick(() => {
-        initGitalk();
-    });
-    }
-);
+  nextTick(() => {
+      initGitalk();
+  });
 })
 
 watch(
@@ -120,6 +105,7 @@ watch(
     await nextTick()
     // 访问量统计
     script?.fetch()
+    initGitalk();
   },
   {
     immediate: true,
