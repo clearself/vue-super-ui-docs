@@ -36,14 +36,16 @@
       </div>
     </template>
     <template #doc-after>
-      <Comment v-if="!showGlobalComment" />
+      <div id="gitalk-container"></div>
+      <!-- <Comment v-if="!showGlobalComment" /> -->
     </template>
   </defaultLayout>
   <!-- <ClientOnly> <SideTool /> </ClientOnly> -->
-  <Comment
+  <div v-if="showGlobalComment" id="gitalk-container"></div>
+  <!-- <Comment
     v-if="showGlobalComment"
     class="home-comment"
-  />
+  /> -->
   <Live2D v-if="!isMobile" />
 
   <el-backtop
@@ -56,7 +58,9 @@
 import defaultLayout from "vitepress/dist/client/theme-default/Layout.vue"
 import { useRoute, useRouter, useData, inBrowser } from "vitepress"
 import { computed, onMounted, watch, nextTick } from "vue"
-import Comment from "./Comment.vue"
+import "gitalk/dist/gitalk.css";
+import createGitalk from "./gitalk";
+// import Comment from "./Comment.vue"
 import Live2D from "./Live2d.vue"
 import SideTool from "./SideTool.vue"
 import { isMobile } from "@/utils"
@@ -70,9 +74,19 @@ const data = useData()
 const getCurClass = computed(() => data.frontmatter.value.class)
 
 const showGlobalComment = computed(() => data.frontmatter.value.layout)
-
+// 初始化 Gitalk
+const initGitalk = () => {
+    if (typeof window !== 'undefined') {
+    const container = document.getElementById('gitalk-container');
+    if (container) {
+        container.innerHTML = '';
+        createGitalk(route.path);
+    }
+    }
+};
 let script: any
 onMounted(async () => {
+  
   // eslint-disable-next-line no-import-assign
   script = await import("busuanzi.pure.js")
   script?.fetch()
@@ -84,6 +98,20 @@ onMounted(async () => {
     const v = (await import("vconsole")) as any
     new v.default()
   }
+
+
+  // 初次加载时初始化 Gitalk
+  initGitalk();
+
+// 监听路由变化
+watch(
+    () => route.path,
+    (newPath) => {
+    nextTick(() => {
+        initGitalk();
+    });
+    }
+);
 })
 
 watch(

@@ -44,7 +44,7 @@ onMounted(() => {
     client_id,
     client_secret,
     owner: "clearself",
-    repo: "vueSuperUi",
+    repo: "https://gitee.com/fu-leiyang/vue-super-ui-docs.git",
     prefix: "[vueSuperUi]",
   })
   inst.mount(commentRef.value)

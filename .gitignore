@@ -26,7 +26,7 @@ stats.html
 
 .temp
 .cache
-dist
+# dist
 cache
 
 # 编译后文件不上传到 git
