@@ -35,15 +35,15 @@
         次
       </div>
     </template>
-    <!-- <template #doc-after>
+    <template #doc-after>
       <Comment v-if="!showGlobalComment" />
-    </template> -->
+    </template>
   </defaultLayout>
   <!-- <ClientOnly> <SideTool /> </ClientOnly> -->
-  <!-- <Comment
+  <Comment
     v-if="showGlobalComment"
     class="home-comment"
-  /> -->
+  />
   <Live2D v-if="!isMobile" />
 
   <el-backtop
