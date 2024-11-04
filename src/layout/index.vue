@@ -55,7 +55,7 @@ import { computed, onMounted, watch, nextTick } from "vue"
 import "gitalk/dist/gitalk.css";
 import createGitalk from "./gitalk";
 import Live2D from "./Live2d.vue"
-import SideTool from "./SideTool.vue"
+// import SideTool from "./SideTool.vue"
 import { isMobile } from "@/utils"
 import FirstLoading from "./FirstLoading.vue"
 
