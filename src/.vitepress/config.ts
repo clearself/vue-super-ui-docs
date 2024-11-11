@@ -72,6 +72,14 @@ export default defineConfig({
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
       },
     ],
+    // 灯笼
+    [
+      "script",
+      {
+        async: "true",
+        src: "https://www.vae.zhangweicheng.xyz/web/denglong.js?text=好好学习",
+      },
+    ],
     ["meta", { name: "author", content: "tomiaa" }],
     // 百度
     ["meta", { name: "baidu-site-verification", content: "code-ElgEHVfH7I" }],

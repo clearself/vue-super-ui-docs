@@ -1,4 +1,4 @@
-import { http } from "@/utils"
+import { http,request } from "@/utils"
 
 export const getGuessit = (type: string) => http.post(`/getGuessit`, { type })
 
@@ -27,3 +27,6 @@ export const ipInfo = (ip: string) => http.get(`/ipInfo`, { params: { ip } })
 export const steamplusone = () => http.get(`/steamplusone`)
 
 export const history2Day = () => http.get(`/history2Day`)
+
+
+export const report = (data:{path:string;url:string;remark?:string}) => request.post(`/report/super`, data)

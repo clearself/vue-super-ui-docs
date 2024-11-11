@@ -57,6 +57,8 @@ import createGitalk from "./gitalk";
 import Live2D from "./Live2d.vue"
 // import SideTool from "./SideTool.vue"
 import { isMobile } from "@/utils"
+import { report } from "@/api"
+
 import FirstLoading from "./FirstLoading.vue"
 
 const route = useRoute()
@@ -74,6 +76,11 @@ const initGitalk = () => {
     if (container) {
         container.innerHTML = '';
         createGitalk(route.path);
+        report({
+        path: encodeURI(route.path),
+        url: encodeURI(window.location.href),
+        remark: document.title,
+      })
     }
     }
 };
