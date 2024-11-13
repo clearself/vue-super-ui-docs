@@ -39,7 +39,7 @@
       <div id="gitalk-container"></div>
     </template>
   </defaultLayout>
-  <div style="width:50%;margin:0 auto;" v-if="showGlobalComment" id="gitalk-container"></div>
+  <div :style="{width: isMobile ? '96%' : '60%',margin:'0 auto'}" v-if="showGlobalComment" id="gitalk-container"></div>
   <Live2D v-if="!isMobile" />
 
   <el-backtop
@@ -63,12 +63,26 @@ import FirstLoading from "./FirstLoading.vue"
 
 const route = useRoute()
 // const router = useRouter()
-
+const debounce = (func:any, wait:any) => {
+  let timeout:any;
+  return function(...args:any) {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+};
 const data = useData()
 
 const getCurClass = computed(() => data.frontmatter.value.class)
 
 const showGlobalComment = computed(() => data.frontmatter.value.layout)
+const toReport = () => {
+  report({
+      path: encodeURI(route.path),
+      url: encodeURI(window.location.href),
+      remark: document.title,
+    })
+}
+const debReport = debounce(toReport, 500)
 // 初始化 Gitalk
 const initGitalk = () => {
     if (typeof window !== 'undefined') {
@@ -76,11 +90,10 @@ const initGitalk = () => {
     if (container) {
         container.innerHTML = '';
         createGitalk(route.path);
-        report({
-        path: encodeURI(route.path),
-        url: encodeURI(window.location.href),
-        remark: document.title,
-      })
+        if(import.meta.env.DEV){
+          return
+        }
+        debReport()
     }
     }
 };
