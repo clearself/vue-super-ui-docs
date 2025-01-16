@@ -254,7 +254,7 @@ export default defineConfig({
       { text: 'BPMN工作流', link: 'https://nest.flypa.cn/bpmn' },
       
       { text: 'NestJs项目', link: 'https://nest.flypa.cn/' },
-      { text: '易收藏', link: 'https://ysc.dnscn.site/#/login' },
+      { text: 'AI助手', link: 'https://nest.flypa.cn/deepseek' },
       { 
         text: '在线工具',
         items: [
