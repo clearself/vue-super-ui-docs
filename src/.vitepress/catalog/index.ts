@@ -12,3 +12,6 @@ export * from "./Fe"
 export * from "./JavaScript"
 export * from "./ES6"
 export * from "./HTMLAndCSS"
+export * from "./Service"
+
+

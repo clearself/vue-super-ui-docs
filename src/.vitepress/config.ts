@@ -13,6 +13,7 @@ import {
   Guide,
   Utils,
   Fe,
+  Service,
   ES6,
   HTMLAndCSS,
   JavaScript
@@ -248,8 +249,13 @@ export default defineConfig({
         text: '博客',
         items: [
           { text: '前端技术栈', link: '/docs/fe/html/standard' },
-          { text: '微前端', link: 'https://clearself.github.io/' },
+          { text: '微前端', link: 'https://clearself.github.io/' }
         ]
+      },
+      
+      { 
+        text: '服务端',
+        link: '/docs/服务端/express.md' 
       },
       { text: 'BPMN工作流', link: 'https://nest.flypa.cn/bpmn' },
       
@@ -278,6 +284,7 @@ export default defineConfig({
       '/docs/guide/': Guide,
       '/docs/utils/': Utils,
       '/docs/fe/':Fe,
+      '/docs/服务端/':Service,
       "/docs/ES6/": ES6,
       "/docs/HTML/": HTMLAndCSS,
       "/docs/CSS/": HTMLAndCSS,
