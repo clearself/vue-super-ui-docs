@@ -8,6 +8,7 @@ import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
 import vueJsx from "@vitejs/plugin-vue-jsx"
 import svgLoader from "vite-svg-loader"
 const isProduction = process.env.NODE_ENV === 'production';
+//
 const base = isProduction?'/vue-super-ui/':'/';
 import {
   Guide,
@@ -68,7 +69,7 @@ export default defineConfig({
     [
       "script",
       {
-        "data-ad-client": "ca-pub-6209757986574246",
+        "data-ad-client": "ca-pub-3479172167745564",
         async: "true",
         src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
       },
@@ -260,7 +261,7 @@ export default defineConfig({
       { text: 'BPMN工作流', link: 'https://nest.flypa.cn/bpmn' },
       
       { text: 'NestJs项目', link: 'https://nest.flypa.cn/' },
-      { text: 'AI助手', link: 'https://nest.flypa.cn/deepseek' },
+      { text: 'AI助手', link: 'https://nest.flypa.cn/chat' },
       { 
         text: '在线工具',
         items: [

@@ -7,7 +7,7 @@
 - 首先，可参考以下命令使用 MakeCert 工具得到 .pvk 和 .cer 文件：
   1. 以管理员身份运行cmd并进入makecert.exe 和 pvk2pfx.exe所在目录 运行下面命令
 
-    ```bush
+    ```bash
     makecert -n "CN=Root" -r -sv root.pvk root.cer
     ```
 
@@ -21,7 +21,7 @@
 
 - 然后，使用命令 pvk2pfx.exe 工具，即可得到代码签名证书文件 cert.pfx：
 
-    ```bush
+    ```bash
     pvk2pfx -pvk root.pvk -pi 532023 -spc root.cer -pfx root.pfx -f
     ```
 

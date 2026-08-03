@@ -57,6 +57,7 @@ export const Fe = [
   { text: '前端项目优化', link: '/docs/fe/fe-optimize' },
   { text: '前端优秀博客', link: '/docs/fe/blog' },
   { text: 'ShowDoc本地部署', link: '/docs/fe/showdoc' },
-  { text: '代码签名证书制作工具', link: '/docs/fe/code-sign' }
+  { text: '代码签名证书制作工具', link: '/docs/fe/code-sign' },
+  { text: 'docker部署hermes流程', link: '/docs/fe/hermes' }
   
 ]
